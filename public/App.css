@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.App-body {
+  background-color: rgba(7, 93, 7, 1);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+}
+.App-header {
+  background-color: rgba(7, 93, 7, 1);
+  max-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 1;
+}
+
+.App-body-deck {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#iaDeck {
+  transform: translateY(-30vh);
+}
+
+#playerDeck {
+  transform: translateY(30vh);
+}
+
+.App-body-deck-card {
+  z-index: 2;
+  width: 7vh;
+  height: 10vh;
+  border: 1px solid transparent;
+  background-image: url(./cartas/dorso.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.App-body-fullDeck {
+  width: 7vh;
+  height: 10vh;
+  position: absolute;
+  background-image: url(./cartas/dorso.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 5vh;
+  z-index: 5;
+}
+
+.App-body-deckborder {
+  width: 7.8vh;
+  height: 11vh;
+  position: absolute;
+  left: 4.2vh;
+  z-index: 3;
+  border: 3px solid white;
+}
+
+.App-body-triumph {
+  width: 7vh;
+  height: 10vh;
+  position: absolute;
+  background-image: url(./cartas/1oros.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 6.8vh;
+  transform: rotate(90deg);
+  z-index: 4;
+}
+
+.App-body-iaPlayZone {
+  width: 7vh;
+  height: 10vh;
+  background-image: url(./cartas/dorso.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  transform: translateY(-10vh);
+}
+
+.App-body-PlayZone {
+  width: 7vh;
+  height: 10vh;
+  background-image: url(./cartas/dorso.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+#iaPlayZone {
+  transform: translateY(-10vh);
+}
+
+#playerPlayZone {
+  transform: translateY(10vh);
+}
+
+.App-body-WonZone {
+  width: 7vh;
+  height: 10vh;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 6vh;
+  border: 3px solid white;
+}
+
+#iaWonZone {
+  transform: translateY(-15vh);
+}
+
+#playerWonZone {
+  transform: translateY(15vh);
+}
+
+
+.App-link {
+  color: #61dafb;
+}
